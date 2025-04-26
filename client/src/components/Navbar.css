@@ -1,0 +1,95 @@
+/* client/src/components/Navbar.css */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  text-decoration: none;
+  color: #4527A0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #4527A0, #7B1FA2);
+  border-radius: 8px;
+  padding: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo-icon svg {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.logo-text {
+  margin-left: 5px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #2c3e50;
+  text-decoration: none;
+  padding: 8px 2px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00796b;
+}
+
+.nav-item-button {
+  margin-left: 15px;
+}
+
+.nav-button {
+  background-color: #ff9e80;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #ff7d57;
+  transform: translateY(-3px);
+}

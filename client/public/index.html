@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prasanna-AILabs</title>
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8fafc;
+    }
+    .app-loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <!-- This content will be shown while React is loading -->
+  <div class="app-loading">
+    <h1>Prasanna-AILabs</h1>
+    <p>Loading application...</p>
+  </div>
+  
+  <!-- React will render inside this element -->
+  <div id="root"></div>
+  
+  <!-- Bundle script - this path is relative to the output path -->
+  <script src="/bundle.js"></script>
+</body>
+</html>

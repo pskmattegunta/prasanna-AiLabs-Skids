@@ -1,0 +1,13 @@
+{
+  "name": "prasanna-ailabs-skids",
+  "version": "1.0.0",
+  "description": "A compassionate platform using AI to support special needs children",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "webpack serve --mode development",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "webpack --mode production"
+  }
+}
