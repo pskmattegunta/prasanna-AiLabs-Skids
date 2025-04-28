@@ -27,6 +27,9 @@ const SimpleNavbar = () => {
           <li className="nav-item nav-item-button">
             <a href="/start" className="nav-button">Get Started</a>
           </li>
+          <li className="nav-item nav-item-button">
+            <a href="/contact" className="nav-button">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
