@@ -15,14 +15,19 @@ app.get('/api/test', (req, res) => {
   res.json({ message: 'API is working!' });
 });
 
-// Serve static assets in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../dist')));
-  
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../dist', 'index.html'));
-  });
-}
+// Serve static assets
+const staticDir = process.env.NODE_ENV === 'production' ? '../dist' : '../public';
+app.use(express.static(path.join(__dirname, staticDir)));
+
+// Serve index.html for all non-API routes
+app.get('*', (req, res) => {
+  // Only serve index.html for non-API requests
+  if (!req.path.startsWith('/api')) {
+    res.sendFile(path.resolve(__dirname, staticDir, 'index.html'));
+  } else {
+    res.status(404).json({ error: 'API route not found' });
+  }
+});
 
 const PORT = process.env.PORT || 5000;
 

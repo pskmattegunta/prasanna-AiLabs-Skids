@@ -15,14 +15,14 @@ const SimpleNavbar = () => {
         </a>
         
         <ul className="nav-menu">
-          <li className="nav-item">
-            <a href="/" className="nav-link">Home</a>
+          <li className="nav-item nav-item-button">
+            <a href="/" className="nav-button">Home</a>
           </li>
-          <li className="nav-item">
-            <a href="/resources" className="nav-link">Resources</a>
+          <li className="nav-item nav-item-button">
+            <a href="/resources" className="nav-button">Resources</a>
           </li>
-          <li className="nav-item">
-            <a href="/ai-speech-therapy" className="nav-link">AI Speech Therapy</a>
+          <li className="nav-item nav-item-button">
+            <a href="/ai-speech-therapy" className="nav-button">AI Speech Therapy</a>
           </li>
           <li className="nav-item nav-item-button">
             <a href="/start" className="nav-button">Get Started</a>
